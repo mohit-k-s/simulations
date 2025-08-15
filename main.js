@@ -15,7 +15,7 @@ import { Simulation } from './simulation.js';
 const simulation = new Simulation(640, 640);
 
 // Initialize with default particles
-let currentParticleCount = 10000;
+let currentParticleCount = 1000;
 simulation.init(currentParticleCount);
 
 // Start the simulation
@@ -26,19 +26,19 @@ function setupParticleSlider() {
     const slider = document.getElementById('particleSlider');
     const countDisplay = document.getElementById('particleCount');
     const applyButton = document.getElementById('applyParticles');
-    
+
     if (!slider || !countDisplay || !applyButton) {
         console.warn('Particle slider elements not found');
         return;
     }
-    
+
     // Update display when slider moves
     slider.addEventListener('input', (e) => {
         const value = parseInt(e.target.value);
         const displayValue = value >= 1000 ? `${Math.round(value / 1000)}K` : value;
         countDisplay.textContent = displayValue;
     });
-    
+
     // Apply new particle count when button is clicked
     applyButton.addEventListener('click', () => {
         const newCount = parseInt(slider.value);

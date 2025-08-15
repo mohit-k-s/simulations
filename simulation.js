@@ -98,7 +98,7 @@ export class Simulation {
     /**
      * Initialize the simulation with default particles
      */
-    init(particleCount = 10000) {
+    init(particleCount = 1000) {
         this.particleSystem.circles = []
         this.particleSystem.spawnCircles(
             particleCount,
