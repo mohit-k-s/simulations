@@ -6,7 +6,7 @@ A real-time physics simulation featuring particle dynamics, collision detection,
 
 - **Real-time Physics Engine** - Gravity, damping, and collision detection
 - **Particle Sleep System** - Particles stop when velocity drops below threshold
-- **Interactive Controls** - Adjustable particle count (10K-50K)
+- **Interactive Controls** - Adjustable particle count (1K-50K)
 - **Performance Monitoring** - Debug info with memory usage tracking
 - **Spatial Grid Optimization** - Efficient collision detection for large particle counts
 
